@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+	 margin:0; /* tira o margin de todo o corpo html */
+	 padding:0; /* tira o padding de todo o corpo html */
+	-webkit-box-sizing:border-box; /* para carregar em outros navegadores */
+		-moz-box-sizing:border-box; /* para carregar em outros navegadores */
+			box-sizing:border-box; /*  deixa o tamanho original do width sem acrescentar os 10px */
+			vertical-align:middle;
+}
+
+body{font-family: 'Roboto', sans-serif; font-size:1em; color:#444; background:#a2a2A2 url(../img/fundo.png) center no-repeat; background-size:100%} /*  1em = 16px */
+h1,h2,h3,h4,h5,h6{text-transform:uppercase; ont-weight:400;}
+p{line-heigth:1.2em; letter-spacing:0;}
+input, select, textarea{width:100%; padding:10px; background:#EEE; border:0;}
+ul,li,ol{list-style:none;}
+a{text-decoration:none} /* Remove o sublinhado dos links*/
+
+.conteudo{
+	width:960px;
+	margin:2% auto;
+	display:block;
+	position:relative;
+	margin-left:-480px;
+	float:left;
+	left:50%;
+}
+
+.base-central{
+	width:100%;
+	display:block;
+	background:#fff; /* adiciona cor de fundo */
+	border-radius:5px; /* para gerar o efeito da borda arredondada */
+		-webkit-border-radius:5px; /* para carregar em outros navegadores */
+			-moz-border-radius:5px; /* para carregar em outros navegadores */
+	box-shadow:0 0 7px 0 #444; /* para gerar o efeito de sombra */
+		-webkit-box-shadow:0 0 7px 0 #444; /* para gerar o efeito de sombra em outros navegadores */
+			-moz-box-shadow:0 0 7px 0 #444; /* para gerar o efeito de sombra em outros navegadores */
+}
+
+.base-topo{
+	
+	display:block;
+	padding:20px 40px;
+	background:#ffbb1e;
+	border-radius:5px 5px 0 0; /* para gerar o efeito da borda arredondada diferentes para cada canto */
+		-webkit-border-radius:5px 5px 0 0; /* para gerar o efeito da borda arredondada diferentes para cada canto em outros navegadores */
+			-moz-border-radius:5px 5px 0 0; /* para gerar o efeito da borda arredondada diferentes para cada canto em outros navegadores */
+}
+
+.base-topo .logo{
+	width:195px;
+	display:inline-block;
+	height:36px;
+	background:url(../img/logo.png) no-repeat;
+}
+
+.base-topo .busca{
+	width:290px;
+	float:right;
+	margin-top:0px;
+	position:relative;
+}
+
+.base-topo .busca input{
+	background:#323232;
+	box-shadow:inset 0 0 7px 0 #444; /* inset joga a sombra para dentro do elemento */
+	border-radius:5px;
+	color:#DDD;
+}
+
+.base-topo .busca .but{
+	background:url(../img/ico-lupa.png) no-repeat;
+	box-shadow:none; /* remove a sombra */
+	position:absolute;
+	top:7px;
+	right:10px;
+	width:20px;
+	cursor:pointer;	/* cria o cursor maozinha */
+	font-size: 0;
+}
+
+.menu{
+	width:100%;
+	float:left;
+	padding:10px 0;
+	background:#323232;
+	border-bottom:solid 5px #E0E0E0;
+}
+
+.menu ul{
+	display:block;
+	text-align:center;
+}
+
+.menu li{
+	display:inline-block;
+	font-size:.8em;
+	text-transform:uppercase;
+	border-right: solid 1px #ddd;
+}
+
+.menu li:last-child{ /* no ultimo li*/
+	border-right: 0; /* remove a | */
+}
+
+.menu li a{
+	display:inline-block;
+	color:#FFF;
+	padding:0px 20px;
+}
+
+.base-home{
+	width:100%;
+	display:inline-block;
+	padding: 20px 40px;
+}
+
+.titulo{
+	display:block;
+	padding:10px 0;
+	color:#323232;
+	font-size:1.4em;
+	font-weight:400;
+	text-align:left;
+}
+
+.titulo:before{
+	content:url(../img/ico-seta-ttl.png);/* adiciona '>>' antes do titulo */
+	padding-right:10px;
+}
+
+.titulo span{
+	color:#FFBB1E;
+	position:relative;
+	top:-2px;
+}
+
+.base-colunas{
+	padding:10px 60px;
+	text-align:center;
+}
+
+.base-colunas .col{
+	width:300px;
+	float:left;
+	margin-bottom:60px;
+}
+
+.base-colunas .col:nth-of-type(2n+0){ /* toda vez que for a 2² class, 2² coluna */
+	float: right;
+}
+
+.base-colunas .col span{
+	color:#323232;
+	display:block;
+	padding: 10px 0;
+	font-weight: 700; /* expessura da fonte=700, bold */
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+
+.base-colunas .col span b{
+	color:#FFBA1E;
+}
+
+.base-colunas .col .icone{
+	width:100%;
+	height:160px;
+	display:block;
+	margin:0 auto;
+}
+
+.base-colunas .col .icone.ico1:before{
+	content:url(../img/ico-home1.png);
+}
+
+.base-colunas .col .icone.ico2:before{
+	content:url(../img/ico-home2.png);
+}
+
+.base-colunas .col .icone.ico3:before{
+	content:url(../img/ico-home3.png);
+}
+
+.base-colunas .col .icone.ico4:before{
+	content:url(../img/ico-home4.png);
+}
+
+.base-rodape{
+	display:block;
+	padding:10px;
+}
+
+.base-rodape p{
+	text-align:center;
+	font-size:.9em;
+	color:#BBB;
+	text-transform:uppercase;
+}
+
+.base-formulario{
+	padding:10px 60px;
+}
+
+.base-formulario label{
+	display:inline-block;
+	padding-top:15px;
+	padding-bottom:5px;
+	font-size:.8em;
+	text-transform:uppercase;
+	color:#666;
+}
+
+.base-formulario .col{
+	width:47%;
+	float:left;
+	margin-bottom:15px;
+}
+
+.base-formulario .col:nth-of-type(2n+0){
+	float:right;
+}
+
+.base-formulario .btn.cad,
+.base-formulario .btn.limpar{
+	display:inline-block;
+	width:auto;
+	padding:10px 25px;
+	margin-top:30px;
+}
+
+.base-formulario .btn.limpar{
+	background:#C7C7D3;
+	color:#484860;
+}
+
+.base-formulario .btn.limpar:hover{
+	background:#ACACBD;
+}
+
+.btn{
+	display:block;
+	padding:10px;
+	border-radius:3px;
+		-webkit-border-radius:3px;
+			-moz-border-radius:3px;
+	text-transform:uppercase;
+	color:#FFF;
+	background:#484860;
+	font-size:.8em;
+}
+
+.btn:hover{
+	cursor:pointer;
+	background:#68688A;
+}
+
+.base-lista{
+	padding:10px 60px;
+	width:100%;
+	float:left;
+}
+
+.base-lista span{
+	color:#323232;
+	display:block;
+	padding:15px 0;
+	font-weight:700;
+	font-size:1.2em;
+	text-align:right;
+}
+
+.base-lista span b{
+	color:#FFBA1E;
+}
+
+.base-lista .tabela table{
+	width:100%;
+}
+
+.base-lista .tabela table th,
+.base-lista .tabela table td
+{
+	font-size:.8em;
+}
+
+.base-lista .tabela table th{
+	padding:10px;
+	text-transform:uppercase;
+	color:#20202F;
+	background:#B9B9C8;
+}
+
+.base-lista .tabela table td{
+	padding:10px;
+	color:#666;
+}
+
+.base-lista .tabela table tr{
+	background:#EEE;
+}
+
+.base-lista .tabela table tr:nth-of-type(2n+0){
+	background:#F5F5F5;
+}
+
+.base-lista .tabela .btn{
+	text-align:center;
+	padding:8px 10px;
+	font-size:.85em;
+}
+
+.base-lista .tabela .btn.excluir{
+	background:#C7C7D3;
+	color:#484860;
+}
+
+.base-lista.pesquisa span{
+	text-align:left;
+}
+
+.base-lista .tabela .btn.excluir{
+	background:#ACACBD;
+}
+
+.paginacao{
+	display:block;
+	text-align:right;
+	margin-top:30px;
+	margin-bottom:130px;
+}
+
+.paginacao li{
+	display:inline-block;
+}
+
+.paginacao .ativo{
+	display:inline-block;
+	background:#C7C7D3;
+	padding: 8px 13px;
+	font-size:.8em;
+	border-radius:3px;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+	color:#484860;
+	text-transform:uppercase;
+}
+
+.paginacao li a{
+	display:inline-block;
+	background:#484860;
+	padding: 8px 13px;
+	font-size:.8em;
+	border-radius:3px;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+.paginacao li a:hover{;
+	background:#5F5F7E;
+}
+
+.paginacao li .primeiro:before{
+	content:url(../img/ico-anterior.png);
+	padding-right:10px;
+}
+
+.paginacao li .ultimo:after{
+	content:url(../img/ico-proximo.png);
+	padding-left:10px;
+}
+
+.paginacao li .ant:before{
+	content:url(../img/ico-anterior.png);
+}
+
+.paginacao li .prox:after{
+	content:url(../img/ico-proximo.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
